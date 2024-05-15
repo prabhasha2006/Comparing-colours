@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple AI - Kumuthu</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./ui.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="camera-container">
+            <div class="camera">
+                <video class="cam-item" id="videoElement" autoplay></video>
+                <div class="cam-item middles"></div>
+                <div class="cam-item middles2"></div>
+                <div class="cam-item middles3"></div>
+            </div>
+            <canvas id="canvas" style="display:none;"></canvas>
+            <div class="cam-buttons">
+                <h1 id="machedName">Red car</h1>
+                <br>
+            </div>
+            <div class="cam-buttons">
+                <a class="camColorLive">RED</a>
+                <a class="camColorLive">GREEN</a>
+                <a class="camColorLive">BLUE</a>
+            </div>
+            <div class="cam-buttons">
+                <a class="camColorLive">COLOUR</a>
+                <button id="captureButton">Capture</button>
+            </div>
+            <div class="cam-buttons">
+                <br><br>
+                <h4>Simple colour memory<br>Made by <u>Kumuthu Prabhasha</u></h4>
+            </div>
+        </div>
+        <div class="settings-container">
+            <h2 id="memory1title">Memory A</h2>
+            <div class="settings-item">
+                <pre>The RGB colours of middle pixel</pre>
+                <div class="flexrow">
+                    <img src="./evelocore-logo-dark-o.jpg" id="memory1_img">
+                    <div class="flexrow-buttons">
+                        <button>RED</button>
+                        <button id="memory1_R">- - -</button>
+                        <button>GREEN</button>
+                        <button id="memory1_G">- - -</button>
+                        <button>BLUE</button>
+                        <button id="memory1_B">- - -</button>
+                    </div>
+                </div>
+            </div>
+            <div class="settings-item">
+                <pre>Live matching status with my memory</pre>
+                <div class="flexrow">
+                    <div class="flexrow-match-buttons">
+                        <button>0%</button>
+                        <button>0%</button>
+                        <button>0%</button>
+                        <button>0%</button>
+                    </div>
+                </div>
+            </div>
+            <div class="settings-item">
+                <pre>Enter name and teach a image of colour</pre>
+                <div class="flexrow">
+                    <input type="text" class="enterName" value="Memory A">
+                    <button class="learnButton" onclick="learnMemoryA()">LEARN (A)</button>
+                </div>
+            </div>
+        </div>
+        <div class="settings-container">
+            <h2 id="memory2title">Memory B</h2>
+            <div class="settings-item">
+                <pre>The RGB colours of middle pixel</pre>
+                <div class="flexrow">
+                    <img src="./evelocore-logo-dark-o.jpg" id="memory2_img">
+                    <div class="flexrow-buttons">
+                        <button>RED</button>
+                        <button id="memory2_R">- - -</button>
+                        <button>GREEN</button>
+                        <button id="memory2_G">- - -</button>
+                        <button>BLUE</button>
+                        <button id="memory2_B">- - -</button>
+                    </div>
+                </div>
+            </div>
+            <div class="settings-item">
+                <pre>Live matching status with my memory</pre>
+                <div class="flexrow">
+                    <div class="flexrow-match-buttons">
+                        <button>0%</button>
+                        <button>0%</button>
+                        <button>0%</button>
+                        <button>0%</button>
+                    </div>
+                </div>
+            </div>
+            <div class="settings-item">
+                <pre>Enter name and teach a image of colour</pre>
+                <div class="flexrow">
+                    <input type="text" class="enterName" value="Memory B">
+                    <button class="learnButton" onclick="learnMemoryB()">LEARN (B)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

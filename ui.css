@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.screen {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.camera-container {
+    width: 35%;
+}
+.settings-container {
+    width: 32%;
+    border-left: 2px solid rgb(197, 197, 197);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.camera {
+    transform-style: preserve-3d;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+}
+.camera video {
+    width: 90%;
+    transform: rotateY(180deg);
+}
+.cam-item {
+    position: absolute;
+    display: flex;
+    transform: matrix3d();
+}
+.camColorLive {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    margin: 10px;
+}
+.camColorLive:nth-child(1) {
+    background-color: red;
+}
+.camColorLive:nth-child(2) {
+    background-color: #0f0;
+}
+.camColorLive:nth-child(3) {
+    background-color: #00f;
+}
+.middles {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+.middles2 {
+    width: 1px;
+    height: 30px;
+    background-color: aliceblue;
+}
+.middles3 {
+    width: 30px;
+    height: 1px;
+    background-color: aliceblue;
+}
+.cam-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cam-buttons button {
+    padding: 10px 15px;
+    margin: 10px;
+    background-color: rgb(0, 255, 55);
+    border: 0;
+}
+.settings-container h2 {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.settings-item {
+    width: 90%;
+    margin: 10px;
+    box-shadow: 00 1px 10px grey;
+    padding: 10px;
+}
+.flexrow {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+.flexrow-buttons {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+}
+.flexrow-buttons button {
+    padding: 10px 5px;
+    margin: 5px;
+    border: 0;
+    background-color: rgb(71, 71, 71);
+    color: white;
+}
+.flexrow-buttons button:nth-child(1) {
+    background-color: #f00;
+}
+.flexrow-buttons button:nth-child(3) {
+    background-color: #0f0;
+}
+.flexrow-buttons button:nth-child(5) {
+    background-color: #00f;
+}
+.settings-item img {
+    width: 50%;
+    padding: 10px;
+}
+.enterName, .learnButton {
+    padding: 10px;
+    margin: 10px;
+}
+
+.flexrow-match-buttons {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 6fr;
+}
+.flexrow-match-buttons button {
+    padding: 10px 5px;
+    margin: 5px;
+    min-width: 4rem;
+    border: 0;
+    background-color: rgba(100, 100, 100, 0);
+    color: white;
+}
+.flexrow-match-buttons button:nth-child(1) {
+    background-color: #f00;
+}
+.flexrow-match-buttons button:nth-child(2) {
+    background-color: #0f0;
+}
+.flexrow-match-buttons button:nth-child(3) {
+    background-color: #00f;
+}
+.flexrow-match-buttons button:nth-child(4) {
+    border: 2px solid black;
+    color: black;
+}
+.settings-item img {
+    width: 50%;
+    padding: 10px;
+}
+.enterName, .learnButton {
+    padding: 10px;
+    margin: 10px;
+}
